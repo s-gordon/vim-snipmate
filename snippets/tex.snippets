@@ -44,6 +44,25 @@ snippet fram
 	\begin{frame}
 	  \frametitle{${1:frame title}}
 	\end{frame}
+# Minipage frame
+snippet frmin
+	% \begin{frame}[label=current]
+	\begin{frame}
+	  \frametitle{${1:title}}
+		\begin{minipage}{0.45\linewidth}
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[width=0.8\textwidth]{}
+				\caption{}
+				\label{}
+			\end{figure}
+		\end{minipage}
+		\begin{minipage}{0.45\linewidth}
+			\begin{itemize}
+				\item ${3:item}
+			\end{itemize}
+		\end{minipage}
+	\end{frame}
 # Description
 snippet desc
 	\begin{description}
